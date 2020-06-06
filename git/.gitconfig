@@ -1,0 +1,116 @@
+[user]
+	name = Andrea Vallotti
+	email = andrea.vallotti@gmail.com
+
+[alias]
+    l1 = log --pretty=oneline -n 20 --graph
+    l = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cgreen\\ [%cn]" --decorate --graph
+    ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cgreen\\ [%cn]" --decorate --numstat
+    ld = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
+    fl = log -u
+    sc = diff --name-only --diff-filter=U
+    s = status -s
+    tags = tag -l
+    bs = branch -a
+    rs = remote -v
+    bl = blame
+    cm = commit -m
+    ca = !git add -A && git commit -avm
+    cam = commit --amend
+    can = commit --amend --no-edit
+    ad = add -A
+    ap = add -p
+    bd = branch -D
+    rd = push origin --delete
+    co = checkout
+    cob = checkout -b
+    pl = pull --prune
+    pr = pull --rebase --prune
+    ps = push
+    df = diff
+    undo = reset HEAD~1 --mixed
+    throw = reset HEAD~1 --hard
+    cc = clean -dfx
+    tree = !git log --graph --decorate --all --oneline --color
+    alias = config --get-regexp alias
+    cpk = cherry-pick
+	# Diff on the same line, ignore whitespaces, remove file prefix
+	dd = diff --word-diff --no-prefix -w
+	# unstage staged files (or pass a filename)
+	unstage = reset HEAD --
+	# global git config
+	ec = config --global -e		# edit
+	lc = config --global -l		# list
+
+[apply]
+	# Detect whitespace errors when applying a patch
+	whitespace = fix
+
+[core]
+	# Use custom `.gitignore` and `.gitattributes`
+	excludesfile = ~/.gitignore
+	attributesfile = ~/.gitattributes
+
+	# Treat spaces before tabs and all kinds of trailing whitespace as an error
+	# [default] trailing-space: looks for spaces at the end of a line
+	# [default] space-before-tab: looks for spaces before tabs at the beginning of a line
+	whitespace = space-before-tab,-indent-with-non-tab,trailing-space
+
+	# Make `git rebase` safer on OS X
+	# More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
+	trustctime = false
+
+	# Prevent showing files whose names contain non-ASCII symbols as unversioned.
+	# http://michael-kuehnel.de/git/2014/11/21/git-mac-osx-and-german-umlaute.html
+	precomposeunicode = false
+
+[color]
+	# Use colors in Git commands that are capable of colored output when
+	# outputting to the terminal. (This is the default setting in Git ≥ 1.8.4.)
+	ui = auto
+
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+
+[color "diff"]
+	meta = cyan bold reverse
+	frag = magenta bold # line info
+	old = red # deletions
+	new = green # additions
+
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+
+[diff]
+	# Detect copies as well as renames
+	renames = copies
+
+[diff "bin"]
+	# Use `hexdump` to diff binary files
+	textconv = hexdump -v -C
+
+[merge]
+	# Include summaries of merged commits in newly created merge commit messages
+	log = true
+
+[push]
+	default = simple
+	
+	# Make `git push` push relevant annotated tags when pushing branches out.
+	followTags = true
+
+[rerere]
+	enabled = true
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
+[icdiff]
+	options = --highlight
