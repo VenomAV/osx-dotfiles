@@ -105,6 +105,7 @@ brew cask install dotnet-sdk
 brew tap isen-ng/dotnet-sdk-versions
 brew cask install dotnet-sdk-2.1.800
 
+brew cask install rectangle
 
 ######################################################
 echo "Install cask fonts"
