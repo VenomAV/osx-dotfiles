@@ -6,3 +6,5 @@ Right now there are still some manual configurations/installations:
   - use current folder as start folder for splitted shell (Preferences -> Profiles -> Default -> General -> Working Directory -> Advanced Configuration -> Home directory, Home directory, Reuse previous session's directory)
   - focus follow mouse (Preferences -> Pointer -> Focus follow mouse)
 - Clipy - exclude Lastpass from history
+- Gestures
+  - show all the window of the current application (System Preferences -> Trackpad ->  More Gestures -> select App Exposé + Swipe down with three fingers)
