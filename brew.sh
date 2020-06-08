@@ -91,7 +91,7 @@ brew cask install firefox-developer-edition
 brew cask install vlc
 brew cask install franz
 brew cask install lastpass
-brew cask install flycut
+brew cask install clipy
 brew cask install gimp
 brew cask install docker
 brew cask install java
