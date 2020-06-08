@@ -36,3 +36,4 @@ Thumbs.db
 *.sbr
 #ignore VS code plugin files
 .ionide
+.fake
