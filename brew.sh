@@ -99,7 +99,9 @@ brew cask install keybase
 brew cask install mongodb-compass-community
 
 # Install developer friendly quick look plugins; see https://github.com/sindresorhus/quick-look-plugins
-brew cask install qlcolorcode qlstephen quicklook-json webpquicklook suspicious-package quicklookase qlvideo
+brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json webpquicklook suspicious-package quicklookase qlvideo
+
+xattr -d -r com.apple.quarantine ~/Library/QuickLook #Remove quarantine attributes on Catalina and later
 
 brew cask install dotnet-sdk
 brew tap isen-ng/dotnet-sdk-versions
