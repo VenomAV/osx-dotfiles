@@ -110,6 +110,7 @@ brew cask install dotnet-sdk-2.1.800
 brew cask install rectangle
 brew cask install slack
 brew cask install zoomus
+brew cask install telegram
 
 ######################################################
 echo "Install cask fonts"
