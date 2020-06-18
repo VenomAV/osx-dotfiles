@@ -114,3 +114,5 @@
 
 [icdiff]
 	options = --highlight
+[pull]
+	ff = only
