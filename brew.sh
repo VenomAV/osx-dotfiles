@@ -112,6 +112,7 @@ brew cask install slack
 brew cask install zoomus
 brew cask install telegram
 brew cask install google-drive-file-stream
+brew cask install postman
 
 ######################################################
 echo "Install cask fonts"
