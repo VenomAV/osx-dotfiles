@@ -111,6 +111,7 @@ brew cask install rectangle
 brew cask install slack
 brew cask install zoomus
 brew cask install telegram
+brew cask install google-drive-file-stream
 
 ######################################################
 echo "Install cask fonts"

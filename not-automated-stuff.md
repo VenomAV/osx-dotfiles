@@ -8,3 +8,6 @@ Right now there are still some manual configurations/installations:
 - Clipy - exclude Lastpass from history
 - Gestures
   - show all the window of the current application (System Preferences -> Trackpad ->  More Gestures -> select App Exposé + Swipe down with three fingers)
+- Google Drive File Stream
+  - Go to System Preferences -> Security & Privacy -> General
+  - Next to "System software from developer 'Google, Inc.' was blocked from loading," click Allow.
