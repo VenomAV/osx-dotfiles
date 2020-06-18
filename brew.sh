@@ -81,6 +81,7 @@ brew cask install jetbrains-toolbox
 brew cask install intellij-idea-ce
 brew cask install rider
 brew cask install webstorm
+brew cask install datagrip
 
 #Browsers
 brew cask install google-chrome
