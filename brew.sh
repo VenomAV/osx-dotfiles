@@ -67,6 +67,8 @@ brew install awscli
 brew install yarn
 brew install yarn-completion
 
+brew install direnv
+
 ####################################################
 echo "installing cask apps"
 
