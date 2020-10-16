@@ -54,6 +54,7 @@ brew install fzf
 brew install bat
 brew install fd
 brew install httpie
+brew install wget
 brew install icdiff #remeber to set it up with git
 brew install p7zip
 brew install ncdu
