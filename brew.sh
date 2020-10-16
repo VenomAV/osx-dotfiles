@@ -70,6 +70,8 @@ brew install yarn-completion
 
 brew install direnv
 
+brew tap homebrew/command-not-found
+
 ####################################################
 echo "installing cask apps"
 
