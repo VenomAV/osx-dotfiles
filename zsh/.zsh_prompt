@@ -71,6 +71,8 @@ ZSH_THEME="robbyrussell"
 plugins=(git
   colored-man-pages
   docker
+  docker-compose
+  kubectl
   sudo
   dotnet
   direnv
@@ -81,7 +83,14 @@ plugins=(git
   npx
   yarn
   gitignore
-  zsh-autosuggestions)
+  zsh-autosuggestions
+  pip
+  cabal
+  encode64
+  httpie
+  python
+  terraform
+  z)
 
 # command-not-found plugin doesn't work w npx
 
