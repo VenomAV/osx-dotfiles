@@ -70,7 +70,6 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git
   colored-man-pages
-  command-not-found
   docker
   sudo
   dotnet
@@ -83,6 +82,8 @@ plugins=(git
   yarn
   gitignore
   zsh-autosuggestions)
+
+# command-not-found plugin doesn't work w npx
 
 export SHOW_AWS_PROMPT=false
 
