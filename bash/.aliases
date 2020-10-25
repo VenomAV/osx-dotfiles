@@ -91,6 +91,14 @@ alias dc=docker-compose
 alias dkpsa="docker ps -a"
 
 alias g=git
+alias gs='g s'
+alias gl='g l'
+alias gld='g ld'
+alias gad='g ad'
+alias gca='g ca'
+alias gcm='g cm'
+alias gcan='g can'
+alias gcam='g cam'
 
 alias vscode=code
 alias c=code
