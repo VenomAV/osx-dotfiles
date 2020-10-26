@@ -99,6 +99,10 @@ alias gca='g ca'
 alias gcm='g cm'
 alias gcan='g can'
 alias gcam='g cam'
+alias gpl='g pl'
+alias gpr='g pr'
+alias gps='g ps'
+alias gco='g co'
 
 alias vscode=code
 alias c=code
