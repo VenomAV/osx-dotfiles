@@ -1,2 +1,12 @@
+# Add `~/bin` to the `$PATH`
+export PATH="$HOME/bin:$PATH";
+## Use gnu tools instead (coreutils, sed)
+if [[ "$(uname)" == "Darwin" ]]; then
+  export PATH="$(brew --prefix)/opt/gnu-sed/libexec/gnubin:$(brew --prefix coreutils)/libexec/gnubin:$PATH"
+  export MANPATH="$(brew --prefix)/opt/gnu-sed/libexec/gnuman:$(brew --prefix coreutils)/libexec/gnuman:$MANPATH"
+fi
 # Put .node_modules/bin in path. Less need to rely on global modules
 export PATH="$PATH:./node_modules/.bin";
+[ -f "/Users/andrea/.ghcup/env" ] && source "/Users/andrea/.ghcup/env" # ghcup-env
+# Add `~/.local/bin` to the `$PATH`
+export PATH="$HOME/.local/bin:$PATH";
