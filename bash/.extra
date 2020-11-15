@@ -12,4 +12,4 @@ fi
 # Setup fnm
 eval "$(fnm env --multi)"
 
-eval "$(direnv hook zsh)"
+eval "$(direnv hook bash)"
