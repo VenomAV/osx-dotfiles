@@ -37,3 +37,7 @@ Thumbs.db
 #ignore VS code plugin files
 .ionide
 .fake
+#Ignore JetBrains IDE folders
+.idea
+#Ignore Mac special folder/file
+.DS_Store
