@@ -80,7 +80,6 @@ plugins=(git
   aws
   osx
   npm
-  npx
   yarn
   gitignore
   zsh-autosuggestions
