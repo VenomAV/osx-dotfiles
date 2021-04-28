@@ -115,10 +115,12 @@ disabled = false
 
 [hostname]
 ssh_only = false
-prefix = "🤖"
-# suffix = "⟫"
 trim_at = "."
 disabled = false
+format = '🤖 [$hostname]($style) in '
+style = 'green dimmed bold'
+
+
 
 # [jobs]
 # symbol = "+ "
