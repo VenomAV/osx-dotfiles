@@ -10,6 +10,6 @@ fi
 ############## NodeJS env
 
 # Setup fnm
-eval "$(fnm env --multi)"
+eval "$(fnm env)"
 
 eval "$(direnv hook bash)"
