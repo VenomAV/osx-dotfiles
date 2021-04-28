@@ -64,7 +64,10 @@ disabled = false
 
 [cmd_duration]
 min_time = 500
-prefix = "tooks "
+format = 'took [$duration]($style) '
+style = 'yellow bold'
+show_milliseconds = false
+disabled = false
 
 [directory]
 truncation_length = 6
