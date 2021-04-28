@@ -55,9 +55,12 @@ threshold = 100
 style = "bold green"
 
 [character]
-# symbol = "➜"
-error_symbol = "✗"
-use_symbol_for_status = true
+format = '$symbol '
+success_symbol = '[❯](bold green)'
+error_symbol = '[✗](bold red)'
+vicmd_symbol = '[❮](bold green)'
+disabled = false
+
 
 [cmd_duration]
 min_time = 500
