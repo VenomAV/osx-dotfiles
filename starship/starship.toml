@@ -66,9 +66,12 @@ prefix = "tooks "
 [directory]
 truncation_length = 6
 truncate_to_repo = true
-prefix = "in "
 style = "bold cyan"
 disabled = false
+format = '[$path]($style)[$read_only]($read_only_style) '
+read_only = '🔒'
+read_only_style = 'red'
+
 
 # [env_var]
 # variable = "SHELL"
