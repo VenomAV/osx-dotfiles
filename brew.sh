@@ -65,6 +65,7 @@ brew install hugo
 brew install starship
 brew install Schniz/tap/fnm
 brew install awscli
+brew install aws-cdk
 brew install yarn
 brew install yarn-completion
 
