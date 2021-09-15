@@ -89,7 +89,8 @@ plugins=(git
   httpie
   python
   terraform
-  z)
+  z
+  fzf)
 
 # command-not-found plugin doesn't work w npx
 
