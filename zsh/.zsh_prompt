@@ -80,7 +80,7 @@ plugins=(git
   direnv
   brew
   aws
-  osx
+  macos
   npm
   yarn
   gitignore
