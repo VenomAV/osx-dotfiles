@@ -60,6 +60,7 @@ brew install p7zip
 brew install ncdu
 brew install git
 brew install git-lfs
+brew install git-delta
 brew install ssh-copy-id
 brew install hugo
 brew install starship

@@ -103,6 +103,8 @@ alias gpl='g pl'
 alias gpr='g pr'
 alias gps='g ps'
 alias gco='g co'
+alias gd='g d'
+alias gds='g ds'
 
 alias vscode=code
 alias c=code

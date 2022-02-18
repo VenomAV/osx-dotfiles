@@ -8,7 +8,8 @@
     ll = log --pretty=format:'%C(yellow)%h%Creset%C(auto)%d%Creset %s %Cgreen[%cn]%Creset' --decorate --numstat
     ld = log --pretty=format:'%C(yellow)%h%Creset %C(bold blue)%ad%Creset%C(auto)%d%Creset %s %C(green)[%cn]%Creset' --decorate  --date=format-local:'%Y-%m-%d %T' --graph
     fl = log -u
-    sc = diff --name-only --diff-filter=U
+	# View just merge conflicts
+	sc = diff --name-only --diff-filter=U
     s = status -s
     tags = tag -l
     bs = branch -a
@@ -27,15 +28,17 @@
     pl = pull --prune
     pr = pull --rebase --prune
     ps = push
-    df = diff
+    d = diff
+	# Diff on the same line, ignore whitespaces, remove file prefix
+	dd = diff --word-diff --no-prefix -w
+	# Diff side-by-side thanks to delta
+	ds = -c delta.side-by-side=true diff
     undo = reset HEAD~1 --mixed
     throw = reset HEAD~1 --hard
     cc = clean -dfx
     tree = !git log --graph --decorate --all --oneline --color
     alias = config --get-regexp alias
     cpk = cherry-pick
-	# Diff on the same line, ignore whitespaces, remove file prefix
-	dd = diff --word-diff --no-prefix -w
 	# unstage staged files (or pass a filename)
 	unstage = reset HEAD --
 	# global git config
@@ -64,6 +67,9 @@
 	# http://michael-kuehnel.de/git/2014/11/21/git-mac-osx-and-german-umlaute.html
 	precomposeunicode = false
 
+	# git-delta setup
+	pager = delta
+
 [color]
 	# Use colors in Git commands that are capable of colored output when
 	# outputting to the terminal. (This is the default setting in Git ≥ 1.8.4.)
@@ -88,6 +94,8 @@
 [diff]
 	# Detect copies as well as renames
 	renames = copies
+	# git-delta setup
+	colorMoved = default
 
 [diff "bin"]
 	# Use `hexdump` to diff binary files
@@ -96,6 +104,8 @@
 [merge]
 	# Include summaries of merged commits in newly created merge commit messages
 	log = true
+	# git-delta setup
+	conflictstyle = diff3
 
 [push]
 	default = simple
@@ -112,7 +122,16 @@
 	process = git-lfs filter-process
 	required = true
 
+[interactive]
+	# git-delta setup
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true
+	#side-by-side = true
+
 [icdiff]
-	options = --highlight
+	options = --highlight --line-numbers
+
 [pull]
 	ff = only
