@@ -44,6 +44,7 @@
 	# global git config
 	ec = config --global -e		# edit
 	lc = config --global -l		# list
+	stashm = stash push -u -m
 
 [apply]
 	# Detect whitespace errors when applying a patch
