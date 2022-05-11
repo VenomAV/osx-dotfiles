@@ -107,9 +107,7 @@ brew cask install keybase
 brew cask install mongodb-compass-community
 brew cask install betterzip
 brew cask install miro
-
-brew tap mongodb/brew
-brew install mongodb-database-tools
+brew install mongosh
 
 # Install developer friendly quick look plugins; see https://github.com/sindresorhus/quick-look-plugins
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json webpquicklook suspicious-package quicklookase qlvideo
