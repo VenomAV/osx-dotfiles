@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+
+const fs = require("fs/promises");
+
+const main = async () => {
+  // Skip first two args (https://nodejs.org/en/knowledge/command-line/how-to-parse-command-line-arguments/)
+  const fileName = process.argv[2];
+  if (!fileName) throw new Error("no file path");
+
+  const content = await fs.readFile(fileName, "utf-8");
+  const oneLiner = JSON.stringify(JSON.parse(content));
+
+  console.log(oneLiner);
+};
+
+main().catch(console.error);
