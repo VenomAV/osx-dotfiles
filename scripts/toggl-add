@@ -1,0 +1,72 @@
+#!/bin/bash
+
+POSITIONAL_ARGS=()
+HOURS="8h"
+TASK="Development"
+LOCATION="Remote"
+YEAR=$(date +%Y)
+MONTH=$(date +%m)
+DAY=$(date +%d)
+
+while [[ $# -gt 0 ]]; do
+  case $1 in
+    -d|--day)
+      DAY=`printf %02s $2`
+      shift # past argument
+      shift # past value
+      ;;
+    -md|--month-day)
+      MONTH=`printf %02s $2`
+      DAY=`printf %02s $3`
+      shift # past argument
+      shift # past month
+      shift # past day
+      ;;
+    -ymd|--date)
+      YEAR="$2"
+      MONTH=`printf %02s $3`
+      DAY=`printf %02s $4`
+      shift # past argument
+      shift # past year
+      shift # past month
+      shift # past day
+      ;;
+    -t|--task)
+      TASK="$2"
+      shift # past argument
+      shift # past value
+      case $TASK in
+        SSCTM)
+          TASK="Technical Mentoring"
+          ;;
+        SSCD)
+          TASK="Development"
+          ;;
+        *)
+          ;;
+      esac
+      ;;
+    -h|--half)
+      HOURS="4h"
+      shift # past argument
+      ;;
+    -o|--onsite)
+      LOCATION="Onsite"
+      shift # past argument
+      ;;
+    -*|--*)
+      echo "Unknown option $1"
+      exit 1
+      ;;
+    *)
+      POSITIONAL_ARGS+=("$1") # save positional arg
+      shift # past argument
+      ;;
+  esac
+done
+
+set -- "${POSITIONAL_ARGS[@]}" # restore positional parameters
+
+if [ -z "$1" ]; then DESCRITION="???"; else DESCRITION=$1; fi
+# echo "toggl add --billable --tags \"$TASK - $LOCATION\" \"$YEAR.$MONTH.$DAY 09:00\" $HOURS \"$DESCRITION\""
+toggl add --billable --tags "$TASK - $LOCATION" "$YEAR.$MONTH.$DAY 09:00" $HOURS "$DESCRITION"
