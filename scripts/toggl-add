@@ -1,6 +1,7 @@
 #!/bin/bash
 
 POSITIONAL_ARGS=()
+START_TIME="09:00"
 HOURS="8h"
 TASK="Development"
 LOCATION="Remote"
@@ -50,6 +51,10 @@ while [[ $# -gt 0 ]]; do
       HOURS="4h"
       shift # past argument
       ;;
+    -p|--pm)
+      START_TIME="14:00"
+      shift # past argument
+      ;;
     -o|--onsite)
       LOCATION="Onsite"
       shift # past argument
@@ -68,5 +73,5 @@ done
 set -- "${POSITIONAL_ARGS[@]}" # restore positional parameters
 
 if [ -z "$1" ]; then DESCRITION="???"; else DESCRITION=$1; fi
-# echo "toggl add --billable --tags \"$TASK - $LOCATION\" \"$YEAR.$MONTH.$DAY 09:00\" $HOURS \"$DESCRITION\""
-toggl add --billable --tags "$TASK - $LOCATION" "$YEAR.$MONTH.$DAY 09:00" $HOURS "$DESCRITION"
+# echo "toggl add --billable --tags \"$TASK - $LOCATION\" \"$YEAR.$MONTH.$DAY $START_TIME\" $HOURS \"$DESCRITION\""
+toggl add --billable --tags "$TASK - $LOCATION" "$YEAR.$MONTH.$DAY $START_TIME" $HOURS "$DESCRITION"
