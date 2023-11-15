@@ -36,11 +36,11 @@ brew install moreutils
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
 brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`.
-brew install gnu-sed
+brew install gnu-sed --with-default-names
 
 # Install latest Bash.
 brew install bash
-brew install bash-completion2
+brew install bash-completion@2
 
 ## Switch to using brew-installed bash as default shell
 #if ! fgrep -q "${BREW_PREFIX}/bin/bash" /etc/shells; then
@@ -69,7 +69,6 @@ brew install awscli
 brew install aws-cdk
 brew install yarn
 brew install yarn-completion
-
 brew install direnv
 
 brew tap homebrew/command-not-found
