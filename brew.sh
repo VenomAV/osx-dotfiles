@@ -80,7 +80,6 @@ brew tap homebrew/cask-versions
 
 # Core casks
 brew cask install iterm2
-brew install --cask kitty
 
 # Development tool casks
 brew cask install visual-studio-code
