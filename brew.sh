@@ -116,7 +116,6 @@ brew install --cask dotnet-sdk
 brew tap isen-ng/dotnet-sdk-versions
 brew install --cask dotnet-sdk-2.1.800
 
-brew install --cask rectangle
 brew install --cask slack
 brew install --cask zoomus
 brew install --cask telegram
