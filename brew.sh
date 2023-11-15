@@ -79,53 +79,53 @@ echo "installing cask apps"
 brew tap homebrew/cask-versions
 
 # Core casks
-brew cask install iterm2
+brew install --cask iterm2
 
 # Development tool casks
-brew cask install visual-studio-code
-brew cask install jetbrains-toolbox
-brew cask install intellij-idea-ce
-brew cask install rider
-brew cask install webstorm
-brew cask install datagrip
+brew install --cask visual-studio-code
+brew install --cask jetbrains-toolbox
+brew install --cask intellij-idea-ce
+brew install --cask rider
+brew install --cask webstorm
+brew install --cask datagrip
 
 #Browsers
-brew cask install google-chrome
-brew cask install firefox
-brew cask install firefox-developer-edition
+brew install --cask google-chrome
+brew install --cask firefox
+brew install --cask firefox-developer-edition
 
 # Misc casks
-brew cask install vlc
-brew cask install franz
-brew cask install lastpass
-brew cask install clipy
-brew cask install gimp
-brew cask install docker
-brew cask install java
-brew cask install keybase
-brew cask install mongodb-compass-community
-brew cask install betterzip
-brew cask install miro
+brew install --cask vlc
+brew install --cask franz
+brew install --cask lastpass
+brew install --cask clipy
+brew install --cask gimp
+brew install --cask docker
+brew install --cask java
+brew install --cask keybase
+brew install --cask mongodb-compass-community
+brew install --cask betterzip
+brew install --cask miro
 brew install mongosh
 
 # Install developer friendly quick look plugins; see https://github.com/sindresorhus/quick-look-plugins
-brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json webpquicklook suspicious-package quicklookase qlvideo
+brew install --cask qlcolorcode qlstephen qlmarkdown quicklook-json webpquicklook suspicious-package quicklookase qlvideo
 xattr -d -r com.apple.quarantine ~/Library/QuickLook #Remove quarantine attributes on Catalina and later
 
-brew cask install dotnet-sdk
+brew install --cask dotnet-sdk
 brew tap isen-ng/dotnet-sdk-versions
-brew cask install dotnet-sdk-2.1.800
+brew install --cask dotnet-sdk-2.1.800
 
-brew cask install rectangle
-brew cask install slack
-brew cask install zoomus
-brew cask install telegram
-brew cask install google-drive-file-stream
-brew cask install postman
+brew install --cask rectangle
+brew install --cask slack
+brew install --cask zoomus
+brew install --cask telegram
+brew install --cask google-drive-file-stream
+brew install --cask postman
 
 ######################################################
 echo "Install cask fonts"
 brew tap homebrew/cask-fonts
-brew cask install font-fira-code
+brew install --cask font-fira-code
 
 brew cleanup
