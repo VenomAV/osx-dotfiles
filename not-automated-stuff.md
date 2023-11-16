@@ -11,3 +11,5 @@ Right now there are still some manual configurations/installations:
 - Google Drive File Stream
   - Go to System Preferences -> Security & Privacy -> General
   - Next to "System software from developer 'Google, Inc.' was blocked from loading," click Allow.
+- From App Store install:
+  - Bitwarden https://apps.apple.com/it/app/bitwarden/id1352778147?l=en&mt=12
