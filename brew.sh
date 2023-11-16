@@ -42,36 +42,36 @@ brew install gnu-sed --with-default-names
 brew install bash
 brew install bash-completion@2
 
-## Switch to using brew-installed bash as default shell
-#if ! fgrep -q "${BREW_PREFIX}/bin/bash" /etc/shells; then
-#  echo "${BREW_PREFIX}/bin/bash" | sudo tee -a /etc/shells;
-#  chsh -s "${BREW_PREFIX}/bin/bash";
-#fi;
-
-brew install tree
+# Shell customization
 brew install z
 brew install fzf
-brew install bat
-brew install fd
-brew install httpie
-brew install wget
-brew install icdiff #remeber to set it up with git
-brew install p7zip
-brew install ncdu
+brew install starship
+brew install direnv
+
+brew tap homebrew/command-not-found
+
+# Development tool formulae
 brew install git
 brew install git-lfs
 brew install git-delta
-brew install ssh-copy-id
+brew install icdiff #remeber to set it up with git
+brew install mongosh
 brew install hugo
-brew install starship
-brew install Schniz/tap/fnm
 brew install awscli
 brew install aws-cdk
 brew install yarn
 brew install yarn-completion
-brew install direnv
+brew install fnm
 
-brew tap homebrew/command-not-found
+# Utils formulae
+brew install tree
+brew install bat
+brew install fd
+brew install httpie
+brew install wget
+brew install p7zip
+brew install ncdu
+brew install ssh-copy-id
 
 ####################################################
 echo "installing cask apps"
@@ -84,10 +84,13 @@ brew install --cask iterm2
 # Development tool casks
 brew install --cask visual-studio-code
 brew install --cask jetbrains-toolbox
-brew install --cask intellij-idea-ce
-brew install --cask rider
-brew install --cask webstorm
-brew install --cask datagrip
+brew install --cask docker
+brew install --cask postman
+brew install --cask mongodb-compass
+brew install --cask dotnet-sdk
+brew tap isen-ng/dotnet-sdk-versions
+brew install --cask dotnet-sdk6-0-400
+brew install --cask dotnet-sdk8-0-100
 
 #Browsers
 brew install --cask google-chrome
@@ -100,27 +103,19 @@ brew install --cask franz
 brew install --cask lastpass
 brew install --cask clipy
 brew install --cask gimp
-brew install --cask docker
-brew install --cask java
 brew install --cask keybase
-brew install --cask mongodb-compass-community
 brew install --cask betterzip
 brew install --cask miro
-brew install mongosh
 
 # Install developer friendly quick look plugins; see https://github.com/sindresorhus/quick-look-plugins
 brew install --cask qlcolorcode qlstephen qlmarkdown quicklook-json webpquicklook suspicious-package quicklookase qlvideo
 xattr -d -r com.apple.quarantine ~/Library/QuickLook #Remove quarantine attributes on Catalina and later
 
-brew install --cask dotnet-sdk
-brew tap isen-ng/dotnet-sdk-versions
-brew install --cask dotnet-sdk-2.1.800
 
 brew install --cask slack
 brew install --cask zoomus
 brew install --cask telegram
 brew install --cask google-drive-file-stream
-brew install --cask postman
 
 ######################################################
 echo "Install cask fonts"
