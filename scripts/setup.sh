@@ -7,6 +7,8 @@ files=(
 	toggl-add
 )
 
+mkdir ~/.local/bin
+
 for file in ${files[@]}; do
 	[ -r "$file" ] && [ -f "$file" ] && ln -sfn ${BASEDIR}/"$file" ~/.local/bin/"$file";
 done;
