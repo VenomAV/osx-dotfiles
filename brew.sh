@@ -96,22 +96,25 @@ brew install --cask dotnet-sdk8-0-100
 brew install --cask google-chrome
 brew install --cask firefox
 brew install --cask firefox-developer-edition
+brew install --cask tor-browser
 
 # Misc casks
+brew install --cask raycast
+brew install --cask alt-tab
+brew install --cask slack
+brew install --cask notion
+brew install --cask miro
+brew install --cask google-drive-file-stream
 brew install --cask vlc
+brew install --cask zoom
 brew install --cask gimp
 brew install --cask keybase
-brew install --cask miro
+brew install --cask telegram
+brew install --cask whatsapp
 
 # Install developer friendly quick look plugins; see https://github.com/sindresorhus/quick-look-plugins
 brew install --cask qlcolorcode qlstephen qlmarkdown quicklook-json webpquicklook suspicious-package quicklookase qlvideo
 xattr -d -r com.apple.quarantine ~/Library/QuickLook #Remove quarantine attributes on Catalina and later
-
-
-brew install --cask slack
-brew install --cask zoomus
-brew install --cask telegram
-brew install --cask google-drive-file-stream
 
 ######################################################
 echo "Install cask fonts"
