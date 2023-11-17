@@ -95,26 +95,38 @@ brew install --cask dotnet-sdk
 brew tap isen-ng/dotnet-sdk-versions
 brew install --cask dotnet-sdk6-0-400
 brew install --cask dotnet-sdk8-0-100
+brew install --cask figma
+brew install --cask ngrok
 
-#Browsers
+# Browsers
 brew install --cask google-chrome
 brew install --cask firefox
 brew install --cask firefox-developer-edition
 brew install --cask tor-browser
 
+# Communication
+brew install --cask telegram
+brew install --cask whatsapp
+brew install --cask signal
+brew install --cask skype
+brew install --cask slack
+brew install --cask zoom
+brew install --cask webex
+brew install --cask microsoft-teams
+
 # Misc casks
 brew install --cask raycast
 brew install --cask alt-tab
-brew install --cask slack
 brew install --cask notion
 brew install --cask miro
 brew install --cask google-drive-file-stream
 brew install --cask vlc
-brew install --cask zoom
 brew install --cask gimp
 brew install --cask keybase
-brew install --cask telegram
-brew install --cask whatsapp
+brew install --cask calibre4
+brew install --cask libreoffice
+brew install --cask spotify
+brew install --cask sublime-merge
 
 # Install developer friendly quick look plugins; see https://github.com/sindresorhus/quick-look-plugins
 brew install --cask qlcolorcode qlstephen qlmarkdown quicklook-json webpquicklook suspicious-package quicklookase qlvideo
@@ -123,6 +135,8 @@ xattr -d -r com.apple.quarantine ~/Library/QuickLook #Remove quarantine attribut
 ######################################################
 echo "Install cask fonts"
 brew tap homebrew/cask-fonts
+brew install --cask font-bebas-neue
 brew install --cask font-fira-code
+brew install --cask font-jetbrains-mono
 
 brew cleanup
