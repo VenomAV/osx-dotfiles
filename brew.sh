@@ -59,6 +59,7 @@ brew install mongosh
 brew install hugo
 brew install awscli
 brew install aws-cdk
+brew install awscurl
 brew install yarn
 brew install yarn-completion
 brew install fnm
