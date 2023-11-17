@@ -18,3 +18,4 @@ dotfiles and other installation scripts that fit my needs on OS X. Stolen from:
 1. `./bash/setup.sh`
 1. `./zsh/setup.sh`
 1. `./git/setup.sh`
+1. `./scripts/setup.sh`
