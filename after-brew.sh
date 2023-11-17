@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+fnm install v16
 fnm default v16
 fnm install v18
 fnm install v20
