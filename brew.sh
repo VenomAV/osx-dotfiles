@@ -63,6 +63,9 @@ brew install awscurl
 brew install yarn
 brew install yarn-completion
 brew install fnm
+brew install exercism
+brew tap mongodb/brew
+brew install mongodb-database-tools
 
 # Utils formulae
 brew install tree

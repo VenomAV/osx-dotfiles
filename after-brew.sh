@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-fnm install v12.16.1
-fnm install latest-v14.x
-fnm default v12.16.1
-fnm use v12.16.1
+fnm default v16
+fnm install v18
+fnm install v20
+fnm use v16
 
 dotnet tool install --global dotnet-suggest
 dotnet tool install --global amazon.lambda.tools

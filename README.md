@@ -11,6 +11,7 @@ dotfiles and other installation scripts that fit my needs on OS X. Stolen from:
 1. `xcode-select --install`
 1. `git clone https://github.com/VenomAV/dotfiles.git`
 1. `./brew.sh`
+1. Open a new terminal
 1. `./after-brew.sh`
 1. `./osx.sh`
 1. `./npm-global.sh`
