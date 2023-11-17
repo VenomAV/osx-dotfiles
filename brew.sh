@@ -99,12 +99,8 @@ brew install --cask firefox-developer-edition
 
 # Misc casks
 brew install --cask vlc
-brew install --cask franz
-brew install --cask lastpass
-brew install --cask clipy
 brew install --cask gimp
 brew install --cask keybase
-brew install --cask betterzip
 brew install --cask miro
 
 # Install developer friendly quick look plugins; see https://github.com/sindresorhus/quick-look-plugins
