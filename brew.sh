@@ -68,6 +68,7 @@ brew install fnm
 brew install exercism
 brew tap mongodb/brew
 brew install mongodb-database-tools
+brew install gh
 
 # Utils formulae
 brew install tree
