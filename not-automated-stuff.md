@@ -14,3 +14,4 @@ Right now there are still some manual configurations/installations:
   - Bitwarden https://apps.apple.com/it/app/bitwarden/id1352778147?l=en&mt=12
 - Disable "Displays have separate Spaces" in "Desktop & Dock" -> "Set up Spaces"
 - Enable "Use trackpad for dragging" in "Accessibility" -> "Trackpad options..."
+- Enable "Use F1, F2, etc. keys as standard function keys" in "Keyboard" -> "Keyboard Shortcuts..." -> "Function Keys"
