@@ -4,7 +4,7 @@ Right now there are still some manual configurations/installations:
   - set FirCode as main font (Preferences -> Profiles -> Default -> Text -> Font -> FiraCode, 13, Use ligatures)
   - system wide hotkey ctrl+` (Preferences -> Keys -> Hotkey -> "Show/hide all windows...")
   - use current folder as start folder for splitted shell (Preferences -> Profiles -> Default -> General -> Working Directory -> Advanced Configuration -> Home directory, Home directory, Reuse previous session's directory)
-- Ray cast - exclude Lastpass/Bitwarden from history
+- Ray cast - exclude Lastpass/Bitwarden from history or import export
 - Gestures
   - show all the window of the current application (System Preferences -> Trackpad ->  More Gestures -> select App Exposé + Swipe down with three fingers)
 - Google Drive File Stream
