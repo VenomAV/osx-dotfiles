@@ -130,6 +130,7 @@ brew install --cask calibre4
 brew install --cask libreoffice
 brew install --cask spotify
 brew install --cask sublime-merge
+brew install --cask karabiner-elements
 
 # Install developer friendly quick look plugins; see https://github.com/sindresorhus/quick-look-plugins
 brew install --cask qlcolorcode qlstephen qlmarkdown quicklook-json webpquicklook suspicious-package quicklookase qlvideo
