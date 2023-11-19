@@ -1,6 +1,10 @@
 Right now there are still some manual configurations/installations:
 
 - iTerm 2
+  - Use custom settings folder by:
+    - going to Preferences -> General -> Preferences
+    - enable "Load preferences from a custom..." in 
+    - set `~/dotfiles/iterm2` as settings folder
   - set FirCode as main font (Preferences -> Profiles -> Default -> Text -> Font -> FiraCode, 13, Use ligatures)
   - system wide hotkey ctrl+` (Preferences -> Keys -> Hotkey -> "Show/hide all windows...")
   - use current folder as start folder for splitted shell (Preferences -> Profiles -> Default -> General -> Working Directory -> Advanced Configuration -> Home directory, Home directory, Reuse previous session's directory)
