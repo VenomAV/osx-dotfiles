@@ -15,3 +15,7 @@ Right now there are still some manual configurations/installations:
 - Disable "Displays have separate Spaces" in "Desktop & Dock" -> "Set up Spaces"
 - Enable "Use trackpad for dragging" in "Accessibility" -> "Trackpad options..."
 - Enable "Use F1, F2, etc. keys as standard function keys" in "Keyboard" -> "Keyboard Shortcuts..." -> "Function Keys"
+- Bring `.env*` (`.envrc`, `.env`, `.env.dev`, etc...) files from your old `Projects` folder:
+  - from the `Projects` folder, run `find . -type d -name node_modules -prune -false -o -regex ".*/\.env.*" -print | zip env-files -@`
+  - copy `env-files.zip` on the new computer
+  - on the new computer, after you have already cloned your repositories, run `unzip /path/to/env-files.zip -d .` from the `Projects` folder
