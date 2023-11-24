@@ -117,6 +117,7 @@ brew install --cask zoom
 brew install --cask webex
 brew install --cask microsoft-teams
 brew install --cask pop
+brew install --cask around
 
 # Misc casks
 brew install --cask raycast
