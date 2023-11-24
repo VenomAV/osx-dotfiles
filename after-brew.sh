@@ -12,3 +12,5 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 ln -sfn ${BASEDIR}/terminal/starship.toml ~/.config/starship.toml
+
+pip3 install togglCli
