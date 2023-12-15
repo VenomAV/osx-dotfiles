@@ -64,6 +64,7 @@ brew install aws-cdk
 brew install awscurl
 brew install yarn
 brew install yarn-completion
+brew install pnpm
 brew install fnm
 brew install exercism
 brew tap mongodb/brew
