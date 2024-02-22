@@ -49,6 +49,7 @@ brew install z
 brew install fzf
 brew install starship
 brew install direnv
+brew install zsh-autosuggestions
 
 brew tap homebrew/command-not-found
 

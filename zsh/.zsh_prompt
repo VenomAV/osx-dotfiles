@@ -84,7 +84,6 @@ plugins=(git
   npm
   yarn
   gitignore
-  zsh-autosuggestions
   pip
   cabal
   encode64
@@ -127,3 +126,4 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 eval "$(starship init zsh)"
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
