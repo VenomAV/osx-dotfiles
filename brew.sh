@@ -50,6 +50,7 @@ brew install fzf
 brew install starship
 brew install direnv
 brew install zsh-autosuggestions
+brew install zsh-syntax-highlighting
 
 brew tap homebrew/command-not-found
 
