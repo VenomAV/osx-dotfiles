@@ -1245,7 +1245,7 @@
 	<key>Default Bookmark Guid</key>
 	<string>DF809659-58C7-4FCF-985C-38F528DF48E3</string>
 	<key>FocusFollowsMouse</key>
-	<true/>
+	<false/>
 	<key>GlobalKeyMap</key>
 	<dict>
 		<key>0x19-0x60000</key>
@@ -2289,7 +2289,7 @@
 	<key>PromptOnQuit</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<false/>
+	<true/>
 	<key>SoundForEsc</key>
 	<false/>
 	<key>VisualIndicatorForEsc</key>
