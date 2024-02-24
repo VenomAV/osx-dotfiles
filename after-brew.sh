@@ -13,3 +13,7 @@ BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ln -sfn ${BASEDIR}/terminal/starship.toml ~/.config/starship.toml
 
 pip3 install togglCli
+
+bash <(curl -L https://nixos.org/nix/install) --daemon
+mkdir -p ~/.config/nix
+ln -sfn ${BASEDIR}/.config/nix.conf ~/.config/nix/nix.conf
