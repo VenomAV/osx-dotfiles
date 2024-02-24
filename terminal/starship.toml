@@ -30,7 +30,6 @@ format = """\
     $env_var\
     $crystal\
     $line_break\
-    $battery\
     $cmd_duration\
     $jobs\
     $time\
