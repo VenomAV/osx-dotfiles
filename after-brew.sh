@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
 fnm install v16
-fnm default v16
 fnm install v18
 fnm install v20
-fnm use v16
+fnm default v20
+fnm use v20
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
