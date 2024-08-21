@@ -72,6 +72,8 @@ brew install exercism
 brew tap mongodb/brew
 brew install mongodb-database-tools
 brew install gh
+brew tap hashicorp/tap
+brew install hashicorp/tap/terraform
 
 # Utils formulae
 brew install tree
