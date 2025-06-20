@@ -7,6 +7,8 @@ LOCATION=""
 YEAR=$(date +%Y)
 MONTH=$(date +%m)
 DAY=$(date +%d)
+PROJECT=""
+DYNAMIC_ARGS=""
 
 while [[ $# -gt 0 ]]; do
   case $1 in
@@ -43,6 +45,11 @@ while [[ $# -gt 0 ]]; do
       LOCATION="onsite"
       shift # past argument
       ;;
+    -j|--project)
+      PROJECT="$2"
+      shift # past argument
+      shift # past value
+      ;;
     -*|--*)
       echo "Unknown option $1"
       exit 1
@@ -59,11 +66,13 @@ set -- "${POSITIONAL_ARGS[@]}" # restore positional parameters
 if [ -z "$1" ]; then DESCRIPTION="???"; else DESCRIPTION=$1; fi
 
 if [ -n "$LOCATION" ]; then
-  TAGS_ARG="--tags \"$LOCATION\""
-else
-  TAGS_ARG=""
+  DYNAMIC_ARGS="--tags \"$LOCATION\""
 fi
 
-# echo toggl add --billable $TAGS_ARG \"$YEAR.$MONTH.$DAY $START_TIME\" $HOURS \"$DESCRIPTION\"
+if [ -n "$PROJECT" ]; then
+  DYNAMIC_ARGS="$DYNAMIC_ARGS --project \"$PROJECT\""
+fi
+
+# echo toggl add --billable $DYNAMIC_ARGS \"$YEAR.$MONTH.$DAY $START_TIME\" $HOURS \"$DESCRIPTION\"
 # shellcheck disable=SC2086
-eval toggl add --billable $TAGS_ARG \"$YEAR.$MONTH.$DAY $START_TIME\" $HOURS \"$DESCRIPTION\"
+eval toggl add --billable $DYNAMIC_ARGS \"$YEAR.$MONTH.$DAY $START_TIME\" $HOURS \"$DESCRIPTION\"
