@@ -3,8 +3,7 @@
 POSITIONAL_ARGS=()
 START_TIME="09:00"
 HOURS="8h"
-TASK="Development"
-LOCATION="Remote"
+LOCATION=""
 YEAR=$(date +%Y)
 MONTH=$(date +%m)
 DAY=$(date +%d)
@@ -32,21 +31,6 @@ while [[ $# -gt 0 ]]; do
       shift # past month
       shift # past day
       ;;
-    -t|--task)
-      TASK="$2"
-      shift # past argument
-      shift # past value
-      case $TASK in
-        SSCTM)
-          TASK="Technical Mentoring"
-          ;;
-        SSCD)
-          TASK="Development"
-          ;;
-        *)
-          ;;
-      esac
-      ;;
     -h|--half)
       HOURS="4h"
       shift # past argument
@@ -56,7 +40,7 @@ while [[ $# -gt 0 ]]; do
       shift # past argument
       ;;
     -o|--onsite)
-      LOCATION="Onsite"
+      LOCATION="onsite"
       shift # past argument
       ;;
     -*|--*)
@@ -72,6 +56,14 @@ done
 
 set -- "${POSITIONAL_ARGS[@]}" # restore positional parameters
 
-if [ -z "$1" ]; then DESCRITION="???"; else DESCRITION=$1; fi
-# echo "toggl add --billable --tags \"$TASK - $LOCATION\" \"$YEAR.$MONTH.$DAY $START_TIME\" $HOURS \"$DESCRITION\""
-toggl add --billable --tags "$TASK - $LOCATION" "$YEAR.$MONTH.$DAY $START_TIME" $HOURS "$DESCRITION"
+if [ -z "$1" ]; then DESCRIPTION="???"; else DESCRIPTION=$1; fi
+
+if [ -n "$LOCATION" ]; then
+  TAGS_ARG="--tags \"$LOCATION\""
+else
+  TAGS_ARG=""
+fi
+
+# echo toggl add --billable $TAGS_ARG \"$YEAR.$MONTH.$DAY $START_TIME\" $HOURS \"$DESCRIPTION\"
+# shellcheck disable=SC2086
+eval toggl add --billable $TAGS_ARG \"$YEAR.$MONTH.$DAY $START_TIME\" $HOURS \"$DESCRIPTION\"
