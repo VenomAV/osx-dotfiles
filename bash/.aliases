@@ -108,3 +108,5 @@ alias gds='g ds'
 
 alias vscode=code
 alias c=code
+
+alias claudio=claude
