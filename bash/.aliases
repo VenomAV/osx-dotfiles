@@ -6,7 +6,7 @@ alias -- -="cd -"
 # Shortcuts
 alias downloads="cd ~/Downloads"
 alias desktop="cd ~/Desktop"
-alias p="cd ~/projects"
+alias projects="cd ~/projects"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
