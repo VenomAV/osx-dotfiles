@@ -92,7 +92,8 @@ plugins=(git
   terraform
   z
   fzf
-  copybuffer)
+  copybuffer
+  pnpm-shell-completion)
 
 # command-not-found plugin doesn't work w npx
 
