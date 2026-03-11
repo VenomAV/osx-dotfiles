@@ -110,3 +110,5 @@ alias vscode=code
 alias c=code
 
 alias claudio=claude
+
+alias pn=pnpm
