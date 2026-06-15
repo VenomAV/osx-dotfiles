@@ -77,3 +77,9 @@ change-aws-profile(){
     fi
     export AWS_PROFILE="$profile"
 }
+
+pf() {
+  local project="$1"
+  shift
+  pnpm --filter="$project" "$@"
+}
