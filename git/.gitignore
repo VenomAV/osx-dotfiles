@@ -41,3 +41,4 @@ Thumbs.db
 .idea
 #Ignore Mac special folder/file
 .DS_Store
+**/.claude/settings.local.json
