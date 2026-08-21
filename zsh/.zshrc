@@ -5,3 +5,6 @@ for file in ~/.{path,zsh_prompt,exports,aliases,functions,zsh_extra,.completion-
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
+
+# Scaleway CLI autocomplete initialization.
+eval "$(scw autocomplete script shell=zsh)"
