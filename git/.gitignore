@@ -42,3 +42,5 @@ Thumbs.db
 #Ignore Mac special folder/file
 .DS_Store
 **/.claude/settings.local.json
+
+**/.claude/.cc-writes/
