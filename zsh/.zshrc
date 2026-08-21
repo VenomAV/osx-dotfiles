@@ -8,3 +8,6 @@ unset file;
 
 # Scaleway CLI autocomplete initialization.
 eval "$(scw autocomplete script shell=zsh)"
+
+autoload -Uz compinit
+compinit
