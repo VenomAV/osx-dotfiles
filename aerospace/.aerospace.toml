@@ -54,6 +54,9 @@ persistent-workspaces = ["SSC-C", "SSC-L", "DL-C", "DL-L", "OFFICE-C", "OFFICE-L
 # See: https://nikitabobko.github.io/AeroSpace/commands#mode
 on-mode-changed = []
 
+# Briefly show every visible workspace on its monitor after a workspace change.
+exec-on-workspace-change = ['/bin/bash', '-c', '"${HOME}/.local/bin/aerospace-workspace-overlay"']
+
 focus-follows-mouse.enabled = false
 
 # Possible values: (qwerty|dvorak|colemak)
