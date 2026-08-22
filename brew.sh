@@ -153,4 +153,6 @@ brew install --cask font-bebas-neue
 brew install --cask font-fira-code
 brew install --cask font-jetbrains-mono
 
+brew install --cask nikitabobko/tap/aerospace
+
 brew cleanup
