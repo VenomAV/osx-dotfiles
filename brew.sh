@@ -154,5 +154,6 @@ brew install --cask font-fira-code
 brew install --cask font-jetbrains-mono
 
 brew install --cask nikitabobko/tap/aerospace
+brew install --cask jordanbaird-ice
 
 brew cleanup
